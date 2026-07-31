@@ -1,0 +1,31 @@
+seed: 42
+
+data:
+  raw_dir: "data/raw"                # where the downloaded RAVDESS audio files live
+  processed_dir: "data/processed"    # where extracted features (.npy) are cached
+  sample_rate: 22050
+  duration: 3.0                      # seconds, clips are padded/truncated to this
+  n_mfcc: 40
+  n_mels: 128
+  test_size: 0.15
+  val_size: 0.15
+
+labels:
+  "01": "neutral"
+  "02": "calm"
+  "03": "happy"
+  "04": "sad"
+  "05": "angry"
+  "06": "fearful"
+  "07": "disgust"
+  "08": "surprised"
+
+train:
+  batch_size: 32
+  epochs: 60
+  lr: 0.001
+  weight_decay: 0.0001
+  patience: 8                        # early stopping
+  device: "cuda"                     # falls back to cpu automatically if unavailable
+
+models_dir: "models"

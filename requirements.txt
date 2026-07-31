@@ -1,0 +1,16 @@
+numpy==2.1.1
+pandas==2.2.3
+librosa==0.10.2.post1
+soundfile==0.12.1
+scikit-learn==1.5.2
+matplotlib==3.9.2
+seaborn==0.13.2
+torch==2.6.0
+torchaudio==2.6.0
+transformers==4.46.0
+datasets==2.20.0
+tqdm==4.66.5
+pyyaml==6.0.2
+kaggle==1.6.17
+gradio==4.44.0
+plotly==5.23.0
