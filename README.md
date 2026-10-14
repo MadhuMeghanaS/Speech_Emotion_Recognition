@@ -25,7 +25,7 @@ unzip ravdess-emotional-speech-audio.zip -d data/raw
 
 ## Project structure
 
-```
+
 speech-emotion-recognition/
 ├── config.yaml                  # all hyperparameters and paths in one place
 ├── requirements.txt
